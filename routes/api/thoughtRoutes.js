@@ -8,7 +8,6 @@ const {
     addReaction,
     removeReaction
 } = require('../../controllers/thoughtController');
-const { route } = require('./userRoutes');
 
 // /api/thoughts
 router
