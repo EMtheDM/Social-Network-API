@@ -1,0 +1,23 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "Social Network API",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EMtheDM/Social-Network-API.git"
+  },
+  "author": "Eric Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EMtheDM/Social-Network-API/issues"
+  },
+  "homepage": "https://github.com/EMtheDM/Social-Network-API#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6"
+  }
+}
