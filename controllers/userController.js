@@ -1,5 +1,5 @@
 const { User } = require('../models');
-const { Thought } = require('../models/Thought');
+const { Thought } = require('../models/Thoughts');
 
 module.exports = {
     // Get all users
@@ -106,7 +106,7 @@ module.exports = {
     removeFriend(req, res) {
         User.findByIdAndUpdate(
             { _id: req.params.userId },
-            {$pull: { friend: { friendId: req.params.friendId } } },
+            { $pull: { friend: { friendId: req.params.friendId } } },
             { runValidators: true, new: true }
         )
         .then((dbUserData) => {

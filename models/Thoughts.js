@@ -30,7 +30,7 @@ const reactionSchema = new Schema(
     }
 );
 
-const thoughtSchema = new Schema(
+const thoughtsSchema = new Schema(
     {
         thoughtText: {
             type: String,
@@ -54,14 +54,13 @@ const thoughtSchema = new Schema(
             virtuals: true,
             getters: true
         },
-        id: false
     }
 );
 
-thoughtSchema.virtual('reactionCount').get(function () {
+thoughtsSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
 });
 
-const Thought = model('thoughts', thoughtSchema);
+const Thoughts = model('thoughts', thoughtsSchema);
 
-module.exports = { Thought };
+module.exports = Thoughts;
