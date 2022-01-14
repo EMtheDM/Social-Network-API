@@ -10,7 +10,7 @@ const addDateSuffix = (date) => {
     } else if (lastChar === "3" && dateStr !== "13") {
         dateStr = `${dateStr}rd`;
     } else {
-        dateStr `${dateStr}th`;
+        dateStr = `${dateStr}th`;
     }
 
     return dateStr;
