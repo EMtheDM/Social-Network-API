@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const userSchema = require('./User');
+const dateFormat = require('../utils/dateFormat');
 
 const reactionSchema = new Schema(
     {
@@ -30,12 +30,11 @@ const reactionSchema = new Schema(
     }
 );
 
-const thoughtsSchema = new Schema(
+const thoughtSchema = new Schema(
     {
         thoughtText: {
             type: String,
             required: true,
-            minLength: 1,
             maxLength: 280,
         },
         createdAt: {
@@ -54,13 +53,14 @@ const thoughtsSchema = new Schema(
             virtuals: true,
             getters: true
         },
+        id: false,
     }
 );
 
-thoughtsSchema.virtual('reactionCount').get(function () {
+thoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
 });
 
-const Thoughts = model('Thoughts', thoughtsSchema);
+const Thoughts = model('Thoughts', thoughtSchema);
 
 module.exports = Thoughts;
