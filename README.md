@@ -38,6 +38,6 @@
       OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
       SOFTWARE.  
   ## Tests
-  Watch this video here: [WATCH HERE](https://watch.screencastify.com/v/pIT22sZ0IKB15D1ryn7X)
+  Watch a walkthrough video here: [WATCH HERE](https://watch.screencastify.com/v/pIT22sZ0IKB15D1ryn7X)
   ## Questions
   If you would like to connect with the developer about Social Network API, please email them at eric_martin@me.com or their gitHub at [EMtheDM](https://github.com/EMtheDM).
