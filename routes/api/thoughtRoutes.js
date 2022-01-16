@@ -9,10 +9,13 @@ const {
     deleteReaction
 } = require('../../controllers/thoughtsController');
 
-// GET and POST routes
+// GET route
 router
     .route('/')
-    .get(getAllThoughts)
+    .get(getAllThoughts);
+// POST route
+router
+    .route('/:userId')
     .post(createThought);
 
 // GET Single, PUT and DELETE routes
